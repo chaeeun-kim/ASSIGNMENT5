@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dollarcomputer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer1
@@ -38,6 +39,16 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // dollarcomputer
+            // 
+            this.dollarcomputer.AutoSize = true;
+            this.dollarcomputer.Font = new System.Drawing.Font("Gulim", 15F);
+            this.dollarcomputer.Location = new System.Drawing.Point(55, 50);
+            this.dollarcomputer.Name = "dollarcomputer";
+            this.dollarcomputer.Size = new System.Drawing.Size(196, 25);
+            this.dollarcomputer.TabIndex = 0;
+            this.dollarcomputer.Text = "Dollar Computer";
+            // 
             // Splashform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -45,17 +56,20 @@
             this.BackgroundImage = global::ASSIGNMENT5.Properties.Resources.dollar_computer;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(312, 450);
+            this.Controls.Add(this.dollarcomputer);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splashform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label dollarcomputer;
     }
 }
 
