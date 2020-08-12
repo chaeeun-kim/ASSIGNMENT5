@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // 제어됩니다. 어셈블리와 관련된 정보를 수정하려면
 // 이러한 특성 값을 변경하세요.
 [assembly: AssemblyTitle("ASSIGNMENT5")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This project stimulates a computer purchase")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ASSIGNMENT5")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Chaeeun Kim")]
+[assembly: AssemblyProduct("www.assignment5.com")]
+[assembly: AssemblyCopyright("417-383-3833")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

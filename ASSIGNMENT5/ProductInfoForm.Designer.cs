@@ -33,32 +33,35 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.IDlabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ProductinfoGropubox = new System.Windows.Forms.GroupBox();
             this.ManyfacturerTextbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Manufacturerlabel = new System.Windows.Forms.Label();
             this.CostTextbox = new System.Windows.Forms.TextBox();
             this.ModelTextbox = new System.Windows.Forms.TextBox();
             this.ScreenTextbox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Costlabel = new System.Windows.Forms.Label();
+            this.Modellabel = new System.Windows.Forms.Label();
+            this.Screensizelabel = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Cancelbutton = new System.Windows.Forms.Button();
+            this.SelectButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.ProductinfoGropubox.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -96,14 +99,28 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // label1
+            // editToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Product ID";
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // undoToolStripMenuItem
+            // 
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
+            this.undoToolStripMenuItem.Text = "Select Another Product";
+            // 
+            // IDlabel
+            // 
+            this.IDlabel.AutoSize = true;
+            this.IDlabel.Location = new System.Drawing.Point(6, 48);
+            this.IDlabel.Name = "IDlabel";
+            this.IDlabel.Size = new System.Drawing.Size(76, 15);
+            this.IDlabel.TabIndex = 1;
+            this.IDlabel.Text = "Product ID";
             // 
             // textBox1
             // 
@@ -113,24 +130,24 @@
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 2;
             // 
-            // groupBox1
+            // ProductinfoGropubox
             // 
-            this.groupBox1.Controls.Add(this.ManyfacturerTextbox);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.CostTextbox);
-            this.groupBox1.Controls.Add(this.ModelTextbox);
-            this.groupBox1.Controls.Add(this.ScreenTextbox);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(39, 27);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(713, 354);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Product Info";
+            this.ProductinfoGropubox.Controls.Add(this.ManyfacturerTextbox);
+            this.ProductinfoGropubox.Controls.Add(this.Manufacturerlabel);
+            this.ProductinfoGropubox.Controls.Add(this.CostTextbox);
+            this.ProductinfoGropubox.Controls.Add(this.ModelTextbox);
+            this.ProductinfoGropubox.Controls.Add(this.ScreenTextbox);
+            this.ProductinfoGropubox.Controls.Add(this.Costlabel);
+            this.ProductinfoGropubox.Controls.Add(this.Modellabel);
+            this.ProductinfoGropubox.Controls.Add(this.Screensizelabel);
+            this.ProductinfoGropubox.Controls.Add(this.IDlabel);
+            this.ProductinfoGropubox.Controls.Add(this.textBox1);
+            this.ProductinfoGropubox.Location = new System.Drawing.Point(39, 27);
+            this.ProductinfoGropubox.Name = "ProductinfoGropubox";
+            this.ProductinfoGropubox.Size = new System.Drawing.Size(713, 354);
+            this.ProductinfoGropubox.TabIndex = 3;
+            this.ProductinfoGropubox.TabStop = false;
+            this.ProductinfoGropubox.Text = "Product Info";
             // 
             // ManyfacturerTextbox
             // 
@@ -140,14 +157,14 @@
             this.ManyfacturerTextbox.Size = new System.Drawing.Size(100, 25);
             this.ManyfacturerTextbox.TabIndex = 10;
             // 
-            // label5
+            // Manufacturerlabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(467, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 15);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Manufacturer";
+            this.Manufacturerlabel.AutoSize = true;
+            this.Manufacturerlabel.Location = new System.Drawing.Point(467, 112);
+            this.Manufacturerlabel.Name = "Manufacturerlabel";
+            this.Manufacturerlabel.Size = new System.Drawing.Size(91, 15);
+            this.Manufacturerlabel.TabIndex = 9;
+            this.Manufacturerlabel.Text = "Manufacturer";
             // 
             // CostTextbox
             // 
@@ -173,32 +190,32 @@
             this.ScreenTextbox.Size = new System.Drawing.Size(100, 25);
             this.ScreenTextbox.TabIndex = 6;
             // 
-            // label4
+            // Costlabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Cost";
+            this.Costlabel.AutoSize = true;
+            this.Costlabel.Location = new System.Drawing.Point(262, 51);
+            this.Costlabel.Name = "Costlabel";
+            this.Costlabel.Size = new System.Drawing.Size(38, 15);
+            this.Costlabel.TabIndex = 5;
+            this.Costlabel.Text = "Cost";
             // 
-            // label3
+            // Modellabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Model";
+            this.Modellabel.AutoSize = true;
+            this.Modellabel.Location = new System.Drawing.Point(6, 115);
+            this.Modellabel.Name = "Modellabel";
+            this.Modellabel.Size = new System.Drawing.Size(47, 15);
+            this.Modellabel.TabIndex = 4;
+            this.Modellabel.Text = "Model";
             // 
-            // label2
+            // Screensizelabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(241, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "ScreenSize";
+            this.Screensizelabel.AutoSize = true;
+            this.Screensizelabel.Location = new System.Drawing.Point(241, 115);
+            this.Screensizelabel.Name = "Screensizelabel";
+            this.Screensizelabel.Size = new System.Drawing.Size(82, 15);
+            this.Screensizelabel.TabIndex = 3;
+            this.Screensizelabel.Text = "ScreenSize";
             // 
             // saveFileDialog1
             // 
@@ -218,35 +235,35 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Click next to Confirm your selection";
             // 
-            // button1
+            // Cancelbutton
             // 
-            this.button1.Location = new System.Drawing.Point(304, 401);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 37);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Select Another Product";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Cancelbutton.Location = new System.Drawing.Point(509, 401);
+            this.Cancelbutton.Name = "Cancelbutton";
+            this.Cancelbutton.Size = new System.Drawing.Size(123, 37);
+            this.Cancelbutton.TabIndex = 8;
+            this.Cancelbutton.Text = "Cancel";
+            this.Cancelbutton.UseVisualStyleBackColor = true;
+            this.Cancelbutton.Click += new System.EventHandler(this.Cancelbutton_Click);
             // 
-            // button2
+            // SelectButton
             // 
-            this.button2.Location = new System.Drawing.Point(500, 401);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 37);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.SelectButton.Location = new System.Drawing.Point(304, 401);
+            this.SelectButton.Name = "SelectButton";
+            this.SelectButton.Size = new System.Drawing.Size(181, 37);
+            this.SelectButton.TabIndex = 9;
+            this.SelectButton.Text = "Select Another Product";
+            this.SelectButton.UseVisualStyleBackColor = true;
+            this.SelectButton.Click += new System.EventHandler(this.SelectButton_Click);
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(641, 401);
+            this.NextButton.Location = new System.Drawing.Point(655, 401);
             this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(120, 37);
-            this.NextButton.TabIndex = 7;
+            this.NextButton.Size = new System.Drawing.Size(97, 37);
+            this.NextButton.TabIndex = 10;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.button3_Click);
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // ProductInfoForm
             // 
@@ -254,10 +271,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SelectButton);
+            this.Controls.Add(this.Cancelbutton);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.ProductinfoGropubox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ProductInfoForm";
@@ -266,8 +283,8 @@
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.ProductinfoGropubox.ResumeLayout(false);
+            this.ProductinfoGropubox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,17 +293,17 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label IDlabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox ProductinfoGropubox;
         private System.Windows.Forms.TextBox CostTextbox;
         private System.Windows.Forms.TextBox ModelTextbox;
         private System.Windows.Forms.TextBox ScreenTextbox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Costlabel;
+        private System.Windows.Forms.Label Modellabel;
+        private System.Windows.Forms.Label Screensizelabel;
         private System.Windows.Forms.TextBox ManyfacturerTextbox;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Manufacturerlabel;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
@@ -294,8 +311,11 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
+        private System.Windows.Forms.Button Cancelbutton;
+        private System.Windows.Forms.Button SelectButton;
         private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

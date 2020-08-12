@@ -108,27 +108,28 @@ namespace ASSIGNMENT5
 
         }
 
+       
+        
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+       
+        private void Cancelbutton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            Program.selectform.Show();
-            this.Hide();
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void NextButton_Click(object sender, EventArgs e)
         {
             Program.orderForm.Show();
+            this.Hide();
+        }
+
+        private void SelectButton_Click(object sender, EventArgs e)
+        {
+            Program.selectform.Show();
             this.Hide();
         }
     }

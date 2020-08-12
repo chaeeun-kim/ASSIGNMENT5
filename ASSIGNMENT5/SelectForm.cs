@@ -12,7 +12,7 @@ namespace ASSIGNMENT5
 {
     public partial class SelectForm : Form
     {
-        public List<products> products { get; set; }
+       
 
 
         public SelectForm()

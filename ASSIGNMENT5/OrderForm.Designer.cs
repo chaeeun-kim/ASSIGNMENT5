@@ -52,10 +52,15 @@
             this.TOTAL = new System.Windows.Forms.Label();
             this.TAX = new System.Windows.Forms.Label();
             this.PRICE = new System.Windows.Forms.Label();
-            this.ComputerPictureBox = new System.Windows.Forms.PictureBox();
             this.BackButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ComputerPictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.SystemgroupBox.SuspendLayout();
             this.PricegroupBox.SuspendLayout();
@@ -66,7 +71,9 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 28);
@@ -79,7 +86,7 @@
             this.printToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 26);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // printToolStripMenuItem
@@ -124,6 +131,7 @@
             // 
             this.CostTextbox.Location = new System.Drawing.Point(133, 115);
             this.CostTextbox.Name = "CostTextbox";
+            this.CostTextbox.ReadOnly = true;
             this.CostTextbox.Size = new System.Drawing.Size(170, 25);
             this.CostTextbox.TabIndex = 9;
             // 
@@ -131,6 +139,7 @@
             // 
             this.ScreensizeTextbox.Location = new System.Drawing.Point(133, 281);
             this.ScreensizeTextbox.Name = "ScreensizeTextbox";
+            this.ScreensizeTextbox.ReadOnly = true;
             this.ScreensizeTextbox.Size = new System.Drawing.Size(170, 25);
             this.ScreensizeTextbox.TabIndex = 8;
             // 
@@ -138,6 +147,7 @@
             // 
             this.ModelTextbox.Location = new System.Drawing.Point(133, 229);
             this.ModelTextbox.Name = "ModelTextbox";
+            this.ModelTextbox.ReadOnly = true;
             this.ModelTextbox.Size = new System.Drawing.Size(170, 25);
             this.ModelTextbox.TabIndex = 7;
             // 
@@ -145,6 +155,7 @@
             // 
             this.ManufactTextbox.Location = new System.Drawing.Point(133, 170);
             this.ManufactTextbox.Name = "ManufactTextbox";
+            this.ManufactTextbox.ReadOnly = true;
             this.ManufactTextbox.Size = new System.Drawing.Size(170, 25);
             this.ManufactTextbox.TabIndex = 6;
             // 
@@ -188,6 +199,7 @@
             // 
             this.IdTextbox.Location = new System.Drawing.Point(133, 55);
             this.IdTextbox.Name = "IdTextbox";
+            this.IdTextbox.ReadOnly = true;
             this.IdTextbox.Size = new System.Drawing.Size(170, 25);
             this.IdTextbox.TabIndex = 1;
             // 
@@ -219,6 +231,7 @@
             // 
             this.PriceTextbox.Location = new System.Drawing.Point(126, 18);
             this.PriceTextbox.Name = "PriceTextbox";
+            this.PriceTextbox.ReadOnly = true;
             this.PriceTextbox.Size = new System.Drawing.Size(170, 25);
             this.PriceTextbox.TabIndex = 4;
             // 
@@ -226,6 +239,7 @@
             // 
             this.TaxTextbox.Location = new System.Drawing.Point(126, 62);
             this.TaxTextbox.Name = "TaxTextbox";
+            this.TaxTextbox.ReadOnly = true;
             this.TaxTextbox.Size = new System.Drawing.Size(170, 25);
             this.TaxTextbox.TabIndex = 5;
             // 
@@ -233,6 +247,7 @@
             // 
             this.TotalTextbox.Location = new System.Drawing.Point(126, 122);
             this.TotalTextbox.Name = "TotalTextbox";
+            this.TotalTextbox.ReadOnly = true;
             this.TotalTextbox.Size = new System.Drawing.Size(170, 25);
             this.TotalTextbox.TabIndex = 6;
             // 
@@ -263,15 +278,6 @@
             this.PRICE.TabIndex = 0;
             this.PRICE.Text = "PRICE";
             // 
-            // ComputerPictureBox
-            // 
-            this.ComputerPictureBox.Image = global::ASSIGNMENT5.Properties.Resources.OIP1;
-            this.ComputerPictureBox.Location = new System.Drawing.Point(542, 65);
-            this.ComputerPictureBox.Name = "ComputerPictureBox";
-            this.ComputerPictureBox.Size = new System.Drawing.Size(98, 102);
-            this.ComputerPictureBox.TabIndex = 0;
-            this.ComputerPictureBox.TabStop = false;
-            // 
             // BackButton
             // 
             this.BackButton.Location = new System.Drawing.Point(456, 396);
@@ -301,6 +307,51 @@
             this.FinishButton.Text = "Finish";
             this.FinishButton.UseVisualStyleBackColor = true;
             this.FinishButton.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BackToolStripMenuItem});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 26);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // BackToolStripMenuItem
+            // 
+            this.BackToolStripMenuItem.Name = "BackToolStripMenuItem";
+            this.BackToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.BackToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.BackToolStripMenuItem.Text = "&Back";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator5,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(55, 26);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(221, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // ComputerPictureBox
+            // 
+            this.ComputerPictureBox.Image = global::ASSIGNMENT5.Properties.Resources.OIP1;
+            this.ComputerPictureBox.Location = new System.Drawing.Point(542, 65);
+            this.ComputerPictureBox.Name = "ComputerPictureBox";
+            this.ComputerPictureBox.Size = new System.Drawing.Size(98, 102);
+            this.ComputerPictureBox.TabIndex = 0;
+            this.ComputerPictureBox.TabStop = false;
             // 
             // OrderForm
             // 
@@ -361,5 +412,10 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button FinishButton;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem BackToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }

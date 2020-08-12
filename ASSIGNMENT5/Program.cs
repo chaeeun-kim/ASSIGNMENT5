@@ -13,7 +13,8 @@ namespace ASSIGNMENT5
         public static SelectForm selectform;
         public static ProductInfoForm productInfoForm;
         public static OrderForm orderForm;
-
+        public static AboutBoxform aboutBoxform;
+        
   
         public static products products;
         /// <summary>;
@@ -29,6 +30,8 @@ namespace ASSIGNMENT5
             selectform = new SelectForm();
             productInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
+            aboutBoxform = new AboutBoxform();
+         
 
             products = new products();
             Application.Run(new Splashform());

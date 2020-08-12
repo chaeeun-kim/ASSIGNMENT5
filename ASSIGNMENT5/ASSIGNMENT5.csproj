@@ -58,6 +58,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBoxform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBoxform.Designer.cs">
+      <DependentUpon>AboutBoxform.cs</DependentUpon>
+    </Compile>
     <Compile Include="DollarComputerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -97,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBoxform.resx">
+      <DependentUpon>AboutBoxform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>

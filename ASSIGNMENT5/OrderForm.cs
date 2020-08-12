@@ -55,6 +55,7 @@ namespace ASSIGNMENT5
 
             Program.productInfoForm.Show();
             this.Hide();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,6 +66,11 @@ namespace ASSIGNMENT5
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("his message is printing");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.aboutBoxform.ShowDialog();
         }
     }
 }
