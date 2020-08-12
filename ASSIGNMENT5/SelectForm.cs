@@ -44,7 +44,7 @@ namespace ASSIGNMENT5
 
         private void ProductDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            ProductDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+       
             
             
             Program.products.Id = Convert.ToInt32(ProductDataGridView.CurrentRow.Cells[0].Value);

@@ -110,10 +110,7 @@ namespace ASSIGNMENT5
 
        
         
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        
 
        
         private void Cancelbutton_Click(object sender, EventArgs e)

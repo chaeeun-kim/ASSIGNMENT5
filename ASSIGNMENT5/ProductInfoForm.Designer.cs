@@ -97,7 +97,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.Cancelbutton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -112,6 +112,7 @@
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.undoToolStripMenuItem.Text = "Select Another Product";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.SelectButton_Click);
             // 
             // IDlabel
             // 
@@ -280,6 +281,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Load);
             this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

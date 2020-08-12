@@ -75,6 +75,7 @@
             this.ProductDataGridView.ReadOnly = true;
             this.ProductDataGridView.RowHeadersWidth = 51;
             this.ProductDataGridView.RowTemplate.Height = 27;
+            this.ProductDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.ProductDataGridView.Size = new System.Drawing.Size(795, 359);
             this.ProductDataGridView.TabIndex = 1;
             this.ProductDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDataGridView_CellClick);
@@ -185,6 +186,7 @@
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";
+            this.Activated += new System.EventHandler(this.SelectForm_Load);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ProductDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
