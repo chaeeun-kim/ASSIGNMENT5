@@ -28,13 +28,13 @@ namespace ASSIGNMENT5
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void NextButton_Click(object sender, EventArgs e)
         {
             this.Close();
             

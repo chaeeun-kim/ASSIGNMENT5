@@ -38,7 +38,7 @@ namespace ASSIGNMENT5
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void FinishButton_Click(object sender, EventArgs e)
         {
           DialogResult result=  MessageBox.Show("thanks him for his business  and advises him that his order will be processed in 7 - 10 business days");
            if(result==DialogResult.OK)
@@ -50,7 +50,7 @@ namespace ASSIGNMENT5
 
         }
         
-        private void button1_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
 
             Program.productInfoForm.Show();
@@ -58,11 +58,11 @@ namespace ASSIGNMENT5
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void CancleButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("his message is printing");

@@ -101,7 +101,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.button2_Click);
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.CancleButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -117,7 +117,7 @@
             this.BackToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.BackToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.BackToolStripMenuItem.Text = "&Back";
-            this.BackToolStripMenuItem.Click += new System.EventHandler(this.button1_Click);
+            this.BackToolStripMenuItem.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -324,7 +324,7 @@
             this.BackButton.TabIndex = 4;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.button1_Click);
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // CancelButton
             // 
@@ -334,7 +334,7 @@
             this.CancelButton.TabIndex = 5;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.button2_Click);
+            this.CancelButton.Click += new System.EventHandler(this.CancleButton_Click);
             // 
             // FinishButton
             // 
@@ -344,7 +344,7 @@
             this.FinishButton.TabIndex = 6;
             this.FinishButton.Text = "Finish";
             this.FinishButton.UseVisualStyleBackColor = true;
-            this.FinishButton.Click += new System.EventHandler(this.button3_Click);
+            this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
             // ComputerPictureBox
             // 
