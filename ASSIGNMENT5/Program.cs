@@ -5,7 +5,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ASSIGNMENT5
-{
+{///-----------------------------------------------------------------
+///   APP name: DOLLAR COMPUTER 
+///   Author's name:  chaeeun kim
+///   Author's student number: 301060073
+///   APP CREATION DATE: 2020.08.18
+///   APP DESCRIPTION:this app calcuate total cost of computer that user choose
+///----------------------------------------------------------------
     public static class Program
 
     { public static Splashform splashform;

@@ -17,11 +17,11 @@ namespace ASSIGNMENT5
         {
             InitializeComponent();
         }
-
+        //load event handler
         private void ProductInfoForm_Load(object sender, EventArgs e)
         {
 
-            
+            //assign the value of properties of product object to text properties of textbox
 
                 textBox1.Text = Program.products.Id.ToString();
                 CostTextbox.Text = Program.products.Cost.ToString();
@@ -35,7 +35,7 @@ namespace ASSIGNMENT5
             
 
         }
-
+        //click event handelr
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
@@ -61,7 +61,7 @@ namespace ASSIGNMENT5
             }
             NextButton.Enabled = true;
         }
-
+        //click event handler
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.InitialDirectory = Directory.GetCurrentDirectory();
@@ -108,11 +108,11 @@ namespace ASSIGNMENT5
 
         }
 
-       
-        
-        
 
-       
+
+
+        //click event handler
+
         private void Cancelbutton_Click(object sender, EventArgs e)
         {
             Application.Exit();

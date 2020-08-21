@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ASSIGNMENT5
 {
    public partial class products
-    {
+    { //public properties
         public int Id { get; set; }
 
         
@@ -19,7 +19,7 @@ namespace ASSIGNMENT5
         public string Model { get; set; }
 
         public string Screensize { get; set; }
-    
+    //constructor
     public products(int id=1,decimal cost=1.1m, string manufacturer="" , string model="", string screensize="")
         {
             Id = id;

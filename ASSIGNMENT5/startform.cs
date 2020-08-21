@@ -17,13 +17,14 @@ namespace ASSIGNMENT5
         {
             InitializeComponent();
         }
-
+        //click event handler
         private void StartButton_Click(object sender, EventArgs e)
         {
            
             Program.selectform.Show();
             this.Hide();
         }
+        //click event handler
 
         private void LoadButton_Click(object sender, EventArgs e)
         {
@@ -32,6 +33,7 @@ namespace ASSIGNMENT5
             this.Hide();
 
         }
+        //click event handler
 
         private void ExitButton_Click(object sender, EventArgs e)
         {

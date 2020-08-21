@@ -19,7 +19,7 @@ namespace ASSIGNMENT5
         {
             InitializeComponent();
         }
-
+        //load event handler
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputerDataSet.Products' table. You can move, or remove it, as needed.
@@ -27,25 +27,26 @@ namespace ASSIGNMENT5
             NextButton.Enabled = false;
 
         }
+        //click event handler
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
         }
-
+        //click event handler
         private void NextButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             
             Program.productInfoForm.Show();
            
         }
-
+        //cell-click event handler
         private void ProductDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
        
-            
+          //assign the values of selected row to the properties of product 
             
             Program.products.Id = Convert.ToInt32(ProductDataGridView.CurrentRow.Cells[0].Value);
             Program.products.Cost = Convert.ToDecimal(ProductDataGridView.CurrentRow.Cells[1].Value);

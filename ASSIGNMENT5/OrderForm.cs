@@ -16,9 +16,11 @@ namespace ASSIGNMENT5
         {
             InitializeComponent();
         }
-
+        //load event handler
         private void OrderForm_Load(object sender, EventArgs e)
         {
+            //assign the value of properties of product to the text properties of textbox
+
             IdTextbox.Text = Program.products.Id.ToString();
 
             CostTextbox.Text = Program.products.Cost.ToString();
@@ -37,7 +39,7 @@ namespace ASSIGNMENT5
 
 
         }
-
+        //click event handler
         private void FinishButton_Click(object sender, EventArgs e)
         {
           DialogResult result=  MessageBox.Show("thanks him for his business  and advises him that his order will be processed in 7 - 10 business days");
@@ -49,7 +51,8 @@ namespace ASSIGNMENT5
            
 
         }
-        
+        //click event handler
+
         private void BackButton_Click(object sender, EventArgs e)
         {
 
@@ -57,17 +60,19 @@ namespace ASSIGNMENT5
             this.Hide();
 
         }
+        //click event handler
 
         private void CancleButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        
+
+        //click event handler
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("his message is printing");
         }
-
+        //click event handler
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.aboutBoxform.ShowDialog();
